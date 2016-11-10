@@ -1,9 +1,3 @@
-"""
-Written by José Reyes, a.k.a 0xC0FFEE
-Simplifies the asking of input
-"""
-
-
 def simple_input(prompt):
     """
     Ask the user for input. Extremely thin wrapper around the common input() function
