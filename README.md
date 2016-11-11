@@ -20,7 +20,7 @@ answer = condition_input("Enter a number: ", int, error_message="Is not a valid 
 answer2 = condition_input("Enter the number of a month: ", int, condition=lambda x: 1<=x<=12, error_message="Is not a valid month. Please retry."
 ```
 
-Most common use case (the asking of `int`s or `float`s) does not require a condition, since type casting is done _before_ the condition is checked. Conditions must take into account that the type is no longer `str`.
+Most common use case (the asking of `int`s or `float`s) does not require a condition, since type casting is done _before_ the condition is checked. Conditions must take into account that the type is no longer `str`, i.e., don't do `lambda x: int(x)>0`, but rather `lambda x: x>0`
 
 ###choice_input
 This function displays a list of possible choices and asks the user to select one of them.
