@@ -1,6 +1,11 @@
 # better-input
 A module containing enhanced input functions for Python
 
+## Usage
+Download `better-input.py` and place it on the same folder as your code. On the top of your code, place the line `from better_input import *`, or import just what you need, or `import better_input`.
+
+## Functions
+
 ### simple_input
 This function is almost equivalent to Python's _input_ function. The only difference is that this one always expects a prompt to be given. Use is `answer = simple_input("Enter a number: ")`.
 
