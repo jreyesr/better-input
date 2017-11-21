@@ -1,12 +1,12 @@
-#better-input
+# better-input
 A module containing enhanced input functions for Python
 
-###simple_input
+### simple_input
 This function is almost equivalent to Python's _input_ function. The only difference is that this one always expects a prompt to be given. Use is `answer = simple_input("Enter a number: ")`.
 
 Returns a raw string (no casting or checkings performed)
 
-###condition_input
+### condition_input
 This function does two different things:
 
 1. Ask the user for input and cast it to another type. Default is `str`.
@@ -22,7 +22,7 @@ answer2 = condition_input("Enter the number of a month: ", int, condition=lambda
 
 Most common use case (the asking of `int`s or `float`s) does not require a condition, since type casting is done _before_ the condition is checked. Conditions must take into account that the type is no longer `str`, i.e., don't do `lambda x: int(x)>0`, but rather `lambda x: x>0`
 
-###choice_input
+### choice_input
 This function displays a list of possible choices and asks the user to select one of them.
 
 `choices` is a list of `str`s. `enumeration` should be either `number` or `char`.
